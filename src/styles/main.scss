@@ -1,32 +1,21 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
-@import 'reset';
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "reset";
+@import "./pages/header.scss";
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
-body {
-  background: $c-white;
-}
+// body {
+//   background: $c-white;
+// }
 
-.container {
-  width: 1040px;
-  margin: 0 auto;
-  padding: 0 20px;
-  transition: width $transition-time;
-}
-
-h1 {
-  background-color: rebeccapurple;
-}
-p {
-  color: bisque;
-  background-color: rosybrown;
-}
-
-img {
-  width: 400px;
-}
+// .container {
+//   width: 1040px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+//   transition: width $transition-time;
+// }

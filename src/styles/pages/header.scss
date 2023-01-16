@@ -1,0 +1,80 @@
+@forward "../utils/vars";
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      330.24deg,
+      rgba(0, 0, 0, 0) 31.06%,
+      #000000 108.93%
+    ),
+    url("../images/hero_background.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: top;
+}
+
+.hero-section {
+  max-width: 1751px;
+  margin: 0 auto;
+  padding: 64px 84px 0;
+
+  &__header {
+    // background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation ul {
+    display: flex;
+
+    & li {
+      list-style-type: none;
+      margin-right: 50px;
+
+      & a {
+        text-decoration: none;
+        color: $c-white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+
+    & > img {
+      width: 20px;
+      height: 20px;
+      margin-right: 14px;
+      cursor: pointer;
+    }
+
+    & input {
+      width: 60px;
+      transition: width $transition-time;
+      background-color: transparent;
+      border: transparent;
+      cursor: pointer;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 23px;
+        color: $c-white;
+      }
+
+      &:focus {
+        width: 150px;
+        transition: width $transition-time;
+        outline: $c-white;
+        border: 1px solid $c-white;
+        caret-color: $c-white;
+      }
+    }
+  }
+}
