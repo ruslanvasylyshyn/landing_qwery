@@ -6,11 +6,16 @@
   background-image: linear-gradient(
       330.24deg,
       rgba(0, 0, 0, 0) 31.06%,
-      #000000 108.93%
+      $background-color-main 108.93%
+    ),
+    linear-gradient(
+      360deg,
+      $background-color-main 14.99%,
+      rgba(0, 0, 0, 0) 77.78%
     ),
     url("../images/hero_background.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
@@ -384,6 +389,10 @@
 
     &__navigation-mobile ul a {
       font-size: 4em;
+    }
+
+    &__scroolDown {
+      margin-bottom: 50px;
     }
   }
 }
