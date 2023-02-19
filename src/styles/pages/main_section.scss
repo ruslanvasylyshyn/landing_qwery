@@ -28,6 +28,7 @@
   &_section {
     background-color: $background-color-main;
     padding: 0 84px;
+    margin-top: -1px;
   }
 
   &__wrapper {
@@ -89,7 +90,12 @@
     background-image: url("../images/main_image-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 226px;
   }
+}
+
+.main__subSection-3 {
+  flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 1450px) {
