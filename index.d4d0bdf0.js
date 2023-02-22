@@ -1,0 +1,2 @@
+const e=document.querySelector("#burger"),t=document.querySelector("#mobile-nav");e.addEventListener("click",(()=>{e.classList.toggle("hero-section__burger-active"),t.classList.toggle("hero-section__navigation-mobile-active")}));new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination"},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+//# sourceMappingURL=index.d4d0bdf0.js.map
